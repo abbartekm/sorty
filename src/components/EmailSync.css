@@ -1,0 +1,168 @@
+.email-sync {
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.sync-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.sync-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.back-btn, .refresh-btn {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.back-btn:hover, .refresh-btn:hover {
+  background: #f0f0f0;
+}
+
+.refresh-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.loading, .no-emails {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+}
+
+.no-emails p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.emails-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.emails-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.email-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.email-header {
+  margin-bottom: 15px;
+}
+
+.email-header h3 {
+  margin: 0 0 8px 0;
+  color: #1a1a1a;
+  font-size: 18px;
+}
+
+.email-sender {
+  color: #666;
+  font-size: 14px;
+}
+
+.case-detection {
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.case-detection.matched {
+  background: #e8f5e9;
+  border-left: 4px solid #4caf50;
+}
+
+.case-detection.not-matched {
+  background: #fff3e0;
+  border-left: 4px solid #ff9800;
+}
+
+.match-info {
+  display: block;
+  margin-top: 8px;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.email-body-preview {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  padding: 12px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.email-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.case-select {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: #ff6b35;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #e55a2b;
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #666;
+}
+
+.btn-secondary:hover {
+  background: #e5e5e5;
+}

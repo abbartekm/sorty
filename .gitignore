@@ -1,0 +1,11 @@
+venv/
+node_modules/
+__pycache__/
+*.pyc
+.env
+token.json
+credentials.json
+data/*.db
+dist/
+.DS_Store
+scc_vector_db.pkl
